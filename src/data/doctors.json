@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Flex El-Masry",
+    "specialty": "Cardiologist",
+    "available": true,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "21.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dr. John Doe",
+    "specialty": "Dermatologist",
+    "available": true,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots":["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "30.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Ahmed El-Sayed",
+    "specialty": "Pediatrician",
+    "available": true,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "61.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Ibrahim Ali",
+    "specialty": "Gynecologist",
+    "available": true,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "64.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Omar Khaled",
+    "specialty": "Orthopedic",
+    "available": true,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "74.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dr. Hosni Hassan",
+    "specialty": "Neurologist",
+    "available": false,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "75.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Dr. Samir Hossam",
+    "specialty": "Ophthalmologist",
+    "available": true,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "85.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Dr. Saber Ibrahim",
+    "specialty": "Endocrinologist",
+    "available": false,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "88.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Dr. Hossam Sharif",
+    "specialty": "Urologist",
+    "available": false,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "82.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Dr. Salah Ahmed",
+    "specialty": "Psychiatrist",
+    "available": false,
+    "rating": 4.9,
+    "location": "Cairo",
+    "availableSlots": ["8:00 AM - 10:50 AM", "2:00 PM - 4:00 PM", "6:00 PM - 8:00 PM"],
+    "image": "13.jpg"
+  }
+]

@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('../src/assets/font/Poppins/Poppins-Regular');
+body {
+  font-family: "Poppins";
+  @apply bg-[#0a192f] text-black min-h-screen;
+}
+
+.button-all {
+  @apply bg-[#38bdf8] hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-400 focus:outline-none focus:shadow-none text-white font-semibold py-2 px-6 rounded-xl  transition-all duration-500 ease-in-out cursor-pointer;
+}
+option {
+  @apply text-black cursor-pointer  transition-all duration-500;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@layer utilities {
+  .animate-scaleIn {
+    animation: scaleIn 0.3s ease-out;
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+.select-wrapper {
+  position: relative;
+  z-index: 10;
+}
+.close {
+  background-color: transparent;
+  color: #000;
+  font-weight: bold;
+  &:hover{
+    background-color: transparent !important;
+  }
+}
