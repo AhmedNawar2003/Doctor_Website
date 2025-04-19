@@ -37,6 +37,12 @@ const AppointmentsList = () => {
   return (
     <>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="text-center text-white md:py-2 md:text-4xl font-semibold capitalize col-span-full">
+          Your Appointments
+        </h2>
+        <div className="col-span-full text-center text-white md:py-3 md:text-2xl font-semibold capitalize">
+          Total Appointments: {appointments.length}
+        </div>
         {appointments.map((appt, i) => (
           <div
             key={i}
