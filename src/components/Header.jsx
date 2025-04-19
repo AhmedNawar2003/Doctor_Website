@@ -2,7 +2,8 @@ import { FaCalendarAlt, FaUserMd } from "react-icons/fa";
 
 export default function Header({ setView }) {
   return (
-    <header className="bg-[#38bff84a] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 mb-6 p-5">
+    <>
+    <div className="bg-[#38bff84a] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 mb-6 p-5 ">
       <div className="flex items-center gap-2 text-center md:text-left">
         <FaUserMd className="text-white md:text-3xl" />
         <h1 className="md:text-2xl font-bold text-white">
@@ -33,6 +34,7 @@ export default function Header({ setView }) {
           </span>
         </button>
       </div>
-    </header>
+    </div>
+    </>
   );
 }

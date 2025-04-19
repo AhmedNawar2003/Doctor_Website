@@ -15,7 +15,7 @@ const App = () => {
     availability: "All",
   });
 
-  const specialties = [...new Set(doctorsData.map((doc) => doc.specialty))]; 
+  const specialties = [...new Set(doctorsData.map((doc) => doc.specialty))];
 
   const filteredDoctors = doctorsData.filter((doc) => {
     const matchSpec =
@@ -32,27 +32,29 @@ const App = () => {
     <>
       <AnimatedBackground />
       <ToastContainer />
-      <div className="max-w-6xl mx-auto">
-        <Header view={view} setView={setView} />
-        {view === "doctors" && (
-          <>
-            <Filter
-              selectedSpecialty={filters.specialty}
-              selectedAvailability={filters.availability}
-              onFilterChange={(newFilter) =>
-                setFilters((prev) => ({ ...prev, ...newFilter }))
-              }
-              specialties={specialties}
-            />
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
-              {filteredDoctors.map((doc) => (
-                <DoctorCard key={doc.id} doctor={doc} setView={setView} />
-              ))}
-            </div>
-          </>
-        )}
-        {view === "appointments" && <AppointmentsList />}
-      </div>
+      <Header view={view} setView={setView} />
+      <main className=" flex flex-grow items-center justify-center min-h-screen">
+        <div className="max-w-6xl mx-auto">
+          {view === "doctors" && (
+            <>
+              <Filter
+                selectedSpecialty={filters.specialty}
+                selectedAvailability={filters.availability}
+                onFilterChange={(newFilter) =>
+                  setFilters((prev) => ({ ...prev, ...newFilter }))
+                }
+                specialties={specialties}
+              />
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                {filteredDoctors.map((doc) => (
+                  <DoctorCard key={doc.id} doctor={doc} setView={setView} />
+                ))}
+              </div>
+            </>
+          )}
+          {view === "appointments" && <AppointmentsList />}
+        </div>
+      </main>
       <Footer />
     </>
   );
