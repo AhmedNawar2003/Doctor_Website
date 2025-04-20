@@ -1,9 +1,9 @@
+@import url('./fonts.css');
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('../src/assets/font/Poppins/Poppins-Regular');
 body {
   font-family: "Poppins";
   @apply bg-[#0a192f] text-black min-h-screen;
