@@ -14,7 +14,7 @@ A responsive and accessible doctor booking interface built using **React**, **Zu
 
 ## Live Demo
 
-[Add Netlify or Vercel link here]
+[https://doctor-website-five.vercel.app/]
 
 ## Technologies Used
 
